@@ -17,6 +17,7 @@
 		949892302B9D9CDF005B4080 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498922F2B9D9CDF005B4080 /* Helpers.swift */; };
 		949892322B9EA484005B4080 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949892312B9EA484005B4080 /* MainViewModel.swift */; };
 		949892342B9EB363005B4080 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949892332B9EB363005B4080 /* NoteViewModel.swift */; };
+		9498923C2B9ED1E5005B4080 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498923B2B9ED1E5005B4080 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9498922F2B9D9CDF005B4080 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		949892312B9EA484005B4080 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		949892332B9EB363005B4080 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		9498923B2B9ED1E5005B4080 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9498922D2B9D4EAC005B4080 /* NoteView.swift */,
+				9498923B2B9ED1E5005B4080 /* UserDefaultsManager.swift */,
 				949892332B9EB363005B4080 /* NoteViewModel.swift */,
 			);
 			path = NoteView;
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9498923C2B9ED1E5005B4080 /* UserDefaultsManager.swift in Sources */,
 				949892342B9EB363005B4080 /* NoteViewModel.swift in Sources */,
 				949892322B9EA484005B4080 /* MainViewModel.swift in Sources */,
 				949892242B9CC2E7005B4080 /* DataController.swift in Sources */,

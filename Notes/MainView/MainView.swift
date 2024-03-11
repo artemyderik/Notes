@@ -77,7 +77,7 @@ struct MainView: View {
     
     private func deleteNote(offsets: IndexSet) {
         withAnimation {
-            offsets.map { viewModel.notes[$0] }.forEach { note in
+            offsets.map { notes[$0] }.forEach { note in
                 viewModel.deleteNote(note)
             }
         }
