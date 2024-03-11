@@ -68,7 +68,7 @@
 				9498921A2B9CC2E5005B4080 /* NotesApp.swift */,
 				949892372B9EB445005B4080 /* MainView */,
 				949892362B9EB43B005B4080 /* NoteView */,
-				949892352B9EB42D005B4080 /* CoreData */,
+				9498923D2B9F5A89005B4080 /* DataFlow */,
 				949892382B9EBAF1005B4080 /* Helpers */,
 				9498921E2B9CC2E7005B4080 /* Assets.xcassets */,
 				949892202B9CC2E7005B4080 /* Preview Content */,
@@ -97,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				9498922D2B9D4EAC005B4080 /* NoteView.swift */,
-				9498923B2B9ED1E5005B4080 /* UserDefaultsManager.swift */,
 				949892332B9EB363005B4080 /* NoteViewModel.swift */,
 			);
 			path = NoteView;
@@ -118,6 +117,23 @@
 				9498922F2B9D9CDF005B4080 /* Helpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9498923D2B9F5A89005B4080 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9498923E2B9F5A98005B4080 /* UserDefaults */,
+				949892352B9EB42D005B4080 /* CoreData */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		9498923E2B9F5A98005B4080 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				9498923B2B9ED1E5005B4080 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
