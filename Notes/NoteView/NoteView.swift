@@ -9,7 +9,9 @@ import SwiftUI
 
 struct NoteView: View {
     @Environment(\.dismiss) private var dismiss
-            
+    
+    @FocusState private var focusedText: FocusableText?
+    
     @StateObject var viewModel: NoteViewModel
 
     var body: some View {
@@ -18,6 +20,7 @@ struct NoteView: View {
                 Text(toFormatDate(from: viewModel.timeStamp))
                     .foregroundStyle(.gray)
                 TextEditor(text: $viewModel.enteredText)
+                    .focused($focusedText, equals: .text)
             }
             .padding()
             .toolbar {
@@ -30,6 +33,10 @@ struct NoteView: View {
                 }
             }
         }
+        .onAppear {
+            focusedText = .text
+        }
+        
         .onDisappear() {
             if !viewModel.isNewNote {
                 saveNote()
@@ -37,6 +44,9 @@ struct NoteView: View {
         }
     }
     
+    private enum FocusableText: Hashable {
+        case text
+    }
     
     private func saveNote() {
         viewModel.saveNote()
