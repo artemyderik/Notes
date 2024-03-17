@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		942A9F0A2BA6DCBC00AD7893 /* String + isAbsoluteEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942A9F092BA6DCBC00AD7893 /* String + isAbsoluteEmpty.swift */; };
 		9498921B2B9CC2E5005B4080 /* NotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498921A2B9CC2E5005B4080 /* NotesApp.swift */; };
 		9498921D2B9CC2E5005B4080 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9498921C2B9CC2E5005B4080 /* MainView.swift */; };
 		9498921F2B9CC2E7005B4080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9498921E2B9CC2E7005B4080 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		942A9F092BA6DCBC00AD7893 /* String + isAbsoluteEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + isAbsoluteEmpty.swift"; sourceTree = "<group>"; };
 		949892172B9CC2E5005B4080 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9498921A2B9CC2E5005B4080 /* NotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesApp.swift; sourceTree = "<group>"; };
 		9498921C2B9CC2E5005B4080 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		942A9F0B2BA6DCCA00AD7893 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				942A9F092BA6DCBC00AD7893 /* String + isAbsoluteEmpty.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9498920E2B9CC2E5005B4080 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9498921A2B9CC2E5005B4080 /* NotesApp.swift */,
+				942A9F0B2BA6DCCA00AD7893 /* Extensions */,
 				949892372B9EB445005B4080 /* MainView */,
 				949892362B9EB43B005B4080 /* NoteView */,
 				9498923D2B9F5A89005B4080 /* DataFlow */,
@@ -211,6 +222,7 @@
 				949892322B9EA484005B4080 /* MainViewModel.swift in Sources */,
 				949892242B9CC2E7005B4080 /* DataController.swift in Sources */,
 				949892302B9D9CDF005B4080 /* Helpers.swift in Sources */,
+				942A9F0A2BA6DCBC00AD7893 /* String + isAbsoluteEmpty.swift in Sources */,
 				9498921D2B9CC2E5005B4080 /* MainView.swift in Sources */,
 				9498921B2B9CC2E5005B4080 /* NotesApp.swift in Sources */,
 				949892272B9CC2E7005B4080 /* NotesData.xcdatamodeld in Sources */,

@@ -24,17 +24,13 @@ class NoteViewModel: ObservableObject {
     
     func saveNote() {
         if isNewNote {
-            guard !isEnteredTextEmpty() else { return }
+            guard !enteredText.isAbsoluteEmpty else { return }
             
             DataController.shared.addNewNote(with: enteredText)
         } else {
-            guard let editingNote = editingNote, !isEnteredTextEmpty() else { return }
+            guard let editingNote = editingNote, !enteredText.isAbsoluteEmpty else { return }
             
             DataController.shared.updateNote(editingNote, enteredText)
         }
-    }
-    
-    func isEnteredTextEmpty() -> Bool {
-        enteredText.trimmingCharacters(in: .whitespaces) == ""
     }
 }

@@ -27,7 +27,7 @@ struct NoteView: View {
                 ToolbarItem() {
                     Button(action: saveNote, label: {
                         if viewModel.isNewNote {
-                            Image(systemName: viewModel.isEnteredTextEmpty() ? "xmark" : "checkmark")
+                            Image(systemName: viewModel.enteredText.isAbsoluteEmpty ? "xmark" : "checkmark")
                         }
                     })
                 }
