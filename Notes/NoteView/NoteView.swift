@@ -38,7 +38,7 @@ struct NoteView: View {
         }
         
         .onDisappear() {
-            if !viewModel.isNewNote {
+            if viewModel.isNewNote {
                 saveNote()
             }
         }
