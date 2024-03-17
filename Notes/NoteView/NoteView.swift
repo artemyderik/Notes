@@ -12,6 +12,8 @@ struct NoteView: View {
     
     @FocusState private var focusedText: FocusableText?
     
+    @State private var isSaveButtonTapped = false
+    
     @StateObject var viewModel: NoteViewModel
 
     var body: some View {
@@ -38,9 +40,8 @@ struct NoteView: View {
         }
         
         .onDisappear() {
-            if viewModel.isNewNote {
-                saveNote()
-            }
+            guard !isSaveButtonTapped else { return }
+            saveNote()
         }
     }
     
@@ -49,6 +50,7 @@ struct NoteView: View {
     }
     
     private func saveNote() {
+        isSaveButtonTapped.toggle()
         viewModel.saveNote()
         dismiss()
     }
